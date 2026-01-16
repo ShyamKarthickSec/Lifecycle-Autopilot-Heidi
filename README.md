@@ -4,6 +4,8 @@
 
 ![Lifecycle Autopilot UI](assets/image.png)
 
+Github Repo: https://github.com/ShyamKarthickSec/Lifecycle-Autopilot-Heidi
+
 Deployed UI Link: https://improved-halibut-vrx45jrr597hx75q-8050.app.github.dev/
 
 > From event logs → deploy-ready lifecycle flows in ~60 seconds  

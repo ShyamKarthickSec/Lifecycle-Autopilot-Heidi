@@ -1,0 +1,118 @@
+{
+  "cohort": {
+    "name": "No First Consult Created Within 48 Hours",
+    "story": "Among a cohort of 299 users who did not create their first consult within 48 hours, we observed an 11% drop-off rate. This indicates a potential barrier in the activation process that may be impacting user engagement. Addressing this issue could streamline workflows and enhance user experience, ultimately leading to more efficient onboarding.",
+    "size": 299,
+    "dropoff_rate": "11%",
+    "urgency": "High"
+  },
+  "flow": {
+    "trigger": "No first consult created within 48h",
+    "sequence": [
+      {
+        "t_plus": "T+48h",
+        "channel": "email",
+        "goal": "activation",
+        "cta": "Log in to create your first consult and streamline your workflow."
+      },
+      {
+        "t_plus": "T+60h",
+        "channel": "sms",
+        "goal": "activation",
+        "cta": "Need help getting started? Access your dashboard to set up your first consult."
+      },
+      {
+        "t_plus": "T+96h",
+        "channel": "in_app",
+        "goal": "activation",
+        "cta": "You're just a few steps away from simplifying your consult process. Let's get started."
+      }
+    ]
+  },
+  "messages": {
+    "email": {
+      "title": "Get Started with Your First Consult",
+      "notes": "Encouraging clinicians to create their first consult.",
+      "variants": [
+        {
+          "tone": "Clear",
+          "cta": "Log in to create your first consult and streamline your workflow.",
+          "text": "We noticed you haven't created your first consult yet. Take a moment to log in and simplify your workflow today."
+        },
+        {
+          "tone": "Calm",
+          "cta": "Log in to create your first consult and streamline your workflow.",
+          "text": "Your first consult is waiting to be set up. Log in now to enhance your workflow with ease."
+        },
+        {
+          "tone": "Confident",
+          "cta": "Log in to create your first consult and streamline your workflow.",
+          "text": "Ready to optimize your workflow? Log in to create your first consult and experience a smoother process."
+        }
+      ]
+    },
+    "sms": {
+      "title": "No first consult created within 48h \u2014 quick SMS",
+      "notes": "Short SMS reminder; under 240 characters.",
+      "variants": [
+        {
+          "tone": "Clear",
+          "cta": "Need help getting started? Access your dashboard to set up your first consult.",
+          "text": "Haven't set up your first consult yet? Log in to your dashboard and get started today."
+        },
+        {
+          "tone": "Calm",
+          "cta": "Need help getting started? Access your dashboard to set up your first consult.",
+          "text": "It's time to create your first consult. Log in to your dashboard for a smoother start."
+        },
+        {
+          "tone": "Confident",
+          "cta": "Need help getting started? Access your dashboard to set up your first consult.",
+          "text": "You're close to getting started! Access your dashboard to set up your first consult now."
+        }
+      ]
+    },
+    "in_app": {
+      "title": "No first consult created within 48h \u2014 in-app nudge",
+      "notes": "Concise in-app card; under 280 characters.",
+      "variants": [
+        {
+          "tone": "Clear",
+          "cta": "You're just a few steps away from simplifying your consult process. Let's get started.",
+          "text": "You've made progress! Just a few more steps to create your first consult. Let's simplify your workflow together."
+        },
+        {
+          "tone": "Calm",
+          "cta": "You're just a few steps away from simplifying your consult process. Let's get started.",
+          "text": "You're almost there. A few steps remain to set up your first consult. Let\u2019s make your workflow smoother."
+        },
+        {
+          "tone": "Confident",
+          "cta": "You're just a few steps away from simplifying your consult process. Let's get started.",
+          "text": "Simplifying your consult process is just a few steps away. Let's get started on your first consult today."
+        }
+      ]
+    }
+  },
+  "qa": {
+    "score": 0.95,
+    "flags": [],
+    "regenerations": 0
+  },
+  "mode": "assisted",
+  "deployment": {
+    "status": "ready_for_approval",
+    "review_required": true,
+    "template_fields": {
+      "campaign_name": "Autopilot \u2014 No First Consult Created Within 48 Hours",
+      "audience_rule": "No first consult created within 48h",
+      "channels": [
+        "email",
+        "sms",
+        "in_app"
+      ],
+      "holdout_pct": 10
+    },
+    "notes": "Assisted mode: prefilled deploy fields. Human approval required to push to lifecycle tool."
+  }
+}

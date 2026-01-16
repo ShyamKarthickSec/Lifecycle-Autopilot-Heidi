@@ -1,0 +1,108 @@
+{
+  "cohort": {
+    "name": "Follow-Up Efficiency for New Consults",
+    "story": "Among our cohort of 299 users, we observed that 11% did not create a first consult within 48 hours. This indicates a potential gap in timely follow-up actions, which could lead to delays in patient care. Addressing this could streamline workflows and enhance overall productivity.",
+    "size": 299,
+    "dropoff_rate": "11%",
+    "urgency": "High"
+  },
+  "flow": {
+    "trigger": "No first consult created within 48h",
+    "sequence": [
+      {
+        "t_plus": "T+48h",
+        "channel": "email",
+        "goal": "followup",
+        "cta": "Log in to create your first consult and streamline your workflow."
+      },
+      {
+        "t_plus": "T+60h",
+        "channel": "sms",
+        "goal": "followup",
+        "cta": "Reminder: Your first consult is waiting to be set up. Access your account to get started."
+      },
+      {
+        "t_plus": "T+96h",
+        "channel": "in_app",
+        "goal": "followup",
+        "cta": "Don't forget to create your first consult to enhance your workflow efficiency."
+      }
+    ]
+  },
+  "messages": {
+    "email": {
+      "title": "Create Your First Consult",
+      "notes": "Follow-up for clinicians who haven't created a consult within 48 hours.",
+      "variants": [
+        {
+          "tone": "clear",
+          "cta": "Log in to create your first consult and streamline your workflow.",
+          "text": "We noticed you haven't set up your first consult yet. Creating it can help reduce your admin burden and improve your workflow. Log in now."
+        },
+        {
+          "tone": "calm",
+          "cta": "Log in to create your first consult and streamline your workflow.",
+          "text": "A smoother workflow is just a consult away. If you haven't created your first consult yet, please log in to get started."
+        },
+        {
+          "tone": "confident",
+          "cta": "Log in to create your first consult and streamline your workflow.",
+          "text": "Take the next step in optimizing your workflow. Create your first consult by logging in today."
+        }
+      ]
+    },
+    "sms": {
+      "title": "No first consult created within 48h \u2014 quick SMS",
+      "notes": "Short SMS reminder; under 240 characters.",
+      "variants": [
+        {
+          "tone": "clear",
+          "cta": "Reminder: Your first consult is waiting to be set up. Access your account to get started.",
+          "text": "It\u2019s time to set up your first consult. Log in to your account and streamline your workflow today."
+        },
+        {
+          "tone": "calm",
+          "cta": "Reminder: Your first consult is waiting to be set up. Access your account to get started.",
+          "text": "Friendly reminder: Your first consult is still pending. Log in to create it and enhance your workflow."
+        },
+        {
+          "tone": "confident",
+          "cta": "Reminder: Your first consult is waiting to be set up. Access your account to get started.",
+          "text": "Don't forget to set up your first consult. Log in now to optimize your workflow."
+        }
+      ]
+    },
+    "in_app": {
+      "title": "No first consult created within 48h \u2014 in-app nudge",
+      "notes": "Concise in-app card; under 280 characters.",
+      "variants": [
+        {
+          "tone": "clear",
+          "cta": "Don't forget to create your first consult to enhance your workflow efficiency.",
+          "text": "A more efficient workflow is within reach. Create your first consult to help streamline your tasks."
+        },
+        {
+          "tone": "calm",
+          "cta": "Don't forget to create your first consult to enhance your workflow efficiency.",
+          "text": "Just a reminder: Creating your first consult can help improve your workflow. Don't miss out on this opportunity."
+        },
+        {
+          "tone": "confident",
+          "cta": "Don't forget to create your first consult to enhance your workflow efficiency.",
+          "text": "Enhance your workflow by creating your first consult. Take a moment to log in and get started."
+        }
+      ]
+    }
+  },
+  "qa": {
+    "score": 0.95,
+    "flags": [],
+    "regenerations": 0
+  },
+  "mode": "shadow",
+  "deployment": {
+    "status": "draft",
+    "review_required": true,
+    "notes": "Shadow mode: suggestions only. Human approval required before any deploy."
+  }
+}

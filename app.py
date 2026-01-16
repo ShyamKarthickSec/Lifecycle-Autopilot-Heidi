@@ -23,7 +23,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 
-APP_TITLE = "Lifecycle Autopilot — Heidi Growth AI Enablement"
+APP_TITLE = "Lifecycle Autopilot - Heidi Growth AI Enablement"
 
 config = AppConfig.load()
 jobs = JobManager()

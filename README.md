@@ -1,8 +1,10 @@
 # Lifecycle Autopilot - AI Growth Enablement for Heidi
 
-Deployed UI Link: https://improved-halibut-vrx45jrr597hx75q-8050.app.github.dev/
+
 
 ![Lifecycle Autopilot UI](assets/image.png)
+
+Deployed UI Link: https://improved-halibut-vrx45jrr597hx75q-8050.app.github.dev/
 
 > From event logs → deploy-ready lifecycle flows in ~60 seconds  
 > UI theme: Yellow + White (Heidi-inspired) • Backend: OpenAI agentic pipeline
@@ -106,6 +108,7 @@ CSV → Event Parser → Cohort Detective → Flow Architect → Copywriter
 ```
 
 ## Author Details:
-- Name : SHyam Karthick
+- Name : Shyam Karthick
 - Project: 10× a Growth Function with AI
 - Email : shyamkarthick20@gmail.com
+- Linkedin : https://www.linkedin.com/in/shyam-karthick/

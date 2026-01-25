@@ -8,6 +8,8 @@ Github Repo: https://github.com/ShyamKarthickSec/Lifecycle-Autopilot-Heidi
 
 Deployed UI Link: https://improved-halibut-vrx45jrr597hx75q-8050.app.github.dev/
 
+Youtube Link: https://youtu.be/i-XlPR_zQPo?si=cegIDetTQ5qE4FuL
+
 > From event logs → deploy-ready lifecycle flows in ~60 seconds  
 > UI theme: Yellow + White (Heidi-inspired) • Backend: OpenAI agentic pipeline
 > Built by **Shyam Karthick** - intentionally styled to mirror Heidi’s site feel for the Heidi Junior Engineer Program.
